@@ -1,35 +1,50 @@
-# github.com/andybalholm/brotli v1.0.0
+# github.com/andybalholm/brotli v1.0.1
+## explicit
 github.com/andybalholm/brotli
+# github.com/cespare/reflex v0.3.0
+## explicit
+# github.com/cosmtrek/air v1.21.2
+## explicit
+# github.com/fatih/color v1.10.0
+## explicit
 # github.com/fsnotify/fsnotify v1.4.9
 ## explicit
-github.com/fsnotify/fsnotify
-# github.com/gofiber/fiber/v2 v2.4.1
+# github.com/gofiber/fiber/v2 v2.5.0
 ## explicit
 github.com/gofiber/fiber/v2
 github.com/gofiber/fiber/v2/internal/bytebufferpool
 github.com/gofiber/fiber/v2/internal/colorable
 github.com/gofiber/fiber/v2/internal/encoding/ascii
 github.com/gofiber/fiber/v2/internal/encoding/json
+github.com/gofiber/fiber/v2/internal/fasttemplate
 github.com/gofiber/fiber/v2/internal/isatty
 github.com/gofiber/fiber/v2/internal/schema
 github.com/gofiber/fiber/v2/internal/uuid
+github.com/gofiber/fiber/v2/middleware/logger
 github.com/gofiber/fiber/v2/utils
-# github.com/klauspost/compress v1.10.7
+# github.com/imdario/mergo v0.3.11
+## explicit
+# github.com/klauspost/compress v1.11.7
+## explicit
 github.com/klauspost/compress/flate
 github.com/klauspost/compress/gzip
 github.com/klauspost/compress/zlib
+# github.com/pelletier/go-toml v1.8.1
+## explicit
 # github.com/qinains/fastergoding v0.0.2
 ## explicit
-github.com/qinains/fastergoding
 # github.com/valyala/bytebufferpool v1.0.0
 github.com/valyala/bytebufferpool
-# github.com/valyala/fasthttp v1.18.0
+# github.com/valyala/fasthttp v1.20.0
+## explicit
 github.com/valyala/fasthttp
 github.com/valyala/fasthttp/fasthttputil
 github.com/valyala/fasthttp/reuseport
 github.com/valyala/fasthttp/stackless
 # github.com/valyala/tcplisten v0.0.0-20161114210144-ceec8f93295a
 github.com/valyala/tcplisten
+# go.mongodb.org/mongo-driver v1.4.6
+## explicit
 # golang.org/x/sys v0.0.0-20210124154548-22da62e12c0c
 ## explicit
 golang.org/x/sys/internal/unsafeheader

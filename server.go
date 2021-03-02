@@ -1,23 +1,29 @@
 package main
 
 import (
-	"fmt"
+	"learn/routes"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/qinains/fastergoding"
+	"github.com/gofiber/fiber/v2/middleware/logger"
 )
 
 func main() {
-	fastergoding.Run("-mod", "vendor", "-o", "gofib")
 	app := fiber.New()
+	app.Use(logger.New())
 
-	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("Hello, World!")
-	})
-	app.Get("/rohit", func(c *fiber.Ctx) error {
-		fmt.Fprintf(c, "%s\n", "Hello, World!")
-		return c.JSON(c)
-	})
+	setUpRoute(app)
 
 	app.Listen(":3000")
+}
+
+func setUpRoute(app *fiber.App) {
+	// app.Get("/", func(c *fiber.Ctx) error {
+	// 	return c.SendString("Hello, World!")
+	// })
+	// api := app.Group("/api")
+	// app.Get("/rohit", func(c *fiber.Ctx) error {
+	// 	return c.JSON(c)
+	// })
+	routes.users(app)
+	routes.TodoRoute(app.Group("/admin"))
 }
